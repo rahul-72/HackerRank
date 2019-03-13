@@ -1,0 +1,17 @@
+n=int(input())
+my_dict={}
+c=1
+while c<=n:
+    data=input()
+    data=data.split()
+    my_dict.update([(data[0],[float(data[1]),float(data[2]),float(data[3])])])
+    c+=1
+else:
+    name=input()
+avg=(my_dict[name][0]+my_dict[name][1]+my_dict[name][2])/3  
+print(f"{avg:.2f}")     
+
+
+
+
+    

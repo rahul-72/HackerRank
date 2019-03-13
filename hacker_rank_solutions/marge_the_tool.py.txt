@@ -1,0 +1,16 @@
+def merge_the_tools(string, k):
+    l=[]
+    c=0
+    while c<len(string):
+        l.append(string[c:c+k])   #len(string)/k pairs of substring will form in list l.
+        c=c+k
+    q=[]        
+    for j in l:     #to iterate list l
+        for k in j:   # to iterate substring
+            if k not in q:
+                q.append(k)
+        print(''.join(q))
+        q.clear()                    
+
+
+if __name__ == '__main__':

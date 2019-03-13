@@ -1,0 +1,12 @@
+from collections import namedtuple
+n=int(input())
+field=input().split()
+total=0
+for i in range(n):
+    detail=namedtuple('detail',field)
+    f1,f2,f3,f4=input().split()
+    student=detail(f1,f2,f3,f4)
+    total+=int(student.MARKS)
+print(total/n)    
+
+

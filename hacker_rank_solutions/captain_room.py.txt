@@ -1,0 +1,13 @@
+k=int(input())
+l=list(map(int,(input().split())))
+unique=set(l)
+print((sum(unique)*k-sum(l))//(k-1))  
+ #k=int(input())
+#l=list(map(int,(input().split())))
+#unique=set(l)
+#for i in unique:
+    #count=l.count(i)
+    #if count==1:
+    #   print(i)
+    
+

@@ -1,0 +1,10 @@
+n,l=int(input()),list(map(int,input().split()))
+if all(i>0 for i in l) and any(i for i in l if list(str(i))==list(reversed(str(i)))):
+    print("True")
+else:
+    print("False")    
+               
+            
+        
+
+

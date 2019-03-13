@@ -1,0 +1,14 @@
+from collections import Counter
+x=int(input())
+l=list(map(int,input().split()))
+my_dict=Counter(l)
+n=int(input())
+total=0
+for i in range(n):
+    my_list=list(map(int,input().split()))
+    if my_list[0] in my_dict:
+        if my_dict[my_list[0]]:
+            total+=my_list[1]
+            my_dict[my_list[0]]-=1
+print(total)            
+

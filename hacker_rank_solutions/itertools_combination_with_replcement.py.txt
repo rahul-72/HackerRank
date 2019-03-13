@@ -1,0 +1,11 @@
+from itertools import combinations_with_replacement
+s,k=input().split()
+s=sorted(s)
+k=int(k)
+l=list(combinations_with_replacement(s,k))
+l=sorted(l)
+for i in l:
+    for j in i:
+        print(j,end='')
+    print()    
+

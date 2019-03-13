@@ -1,0 +1,14 @@
+n,m=map(int,input().split())
+a=[input() for i in range(n)]
+b=[input() for i in range(m)]
+for i in b:
+    if i in a:
+        my_list=[]
+        for index,value in enumerate(a):
+            if value==i:
+                my_list.append(index+1) 
+        print(*my_list)                  
+    else:
+        print(-1) 
+            
+

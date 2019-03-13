@@ -1,0 +1,10 @@
+n=int(input())
+arr=map(int,input().split())
+s=set(arr)
+maximum=max(s)
+s.remove(maximum)
+l=list(s)
+l.sort()
+length=len(l)
+print(l[length-1])
+

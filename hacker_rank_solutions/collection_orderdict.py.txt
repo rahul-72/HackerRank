@@ -1,0 +1,13 @@
+from collections import OrderedDict
+n=int(input())
+d=OrderedDict()
+for i in range(n):
+    name,space,price=input().rpartition(' ')
+    price=int(price)
+    if name in d:
+        d[name]=d[name]+price
+    else:
+        d.update([(name,price)])
+for key,value in d.items():
+    print(key,value)         
+

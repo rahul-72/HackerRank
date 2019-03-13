@@ -1,0 +1,13 @@
+from itertools import combinations
+n=int(input())
+l=input().lower().split()
+k=int(input())
+combi=list(combinations(l,k))  #In above example [(1,2),(1,3),(1,4),(2,3),(2,4),(3,4)]=[aa,ac,ad,ac,ad,cd] both are equal.Instead of making cobinations from thier number we can make combinations from string it self.
+count=0
+for i in combi:
+    if 'a' in i:
+        count+=1                       
+print(count/len(combi))            
+
+
+

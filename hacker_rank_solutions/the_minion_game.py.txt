@@ -1,0 +1,16 @@
+def minion_game(string):
+    string=string.lower()
+    l=['a','e','i','o','u']
+    stuart,kevin=0,0
+    for i,j in enumerate(string):
+        if j in l:
+            kevin+=(len(string)-i)
+        else:
+            stuart+=(len(string)-i)
+    if kevin>stuart:
+        print(f"Kevin {kevin}")
+    elif stuart>kevin:
+        print(f"Stuart {stuart}") 
+    else:
+        print("Draw")               
+if __name__ == '__main__':
